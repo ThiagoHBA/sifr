@@ -1,5 +1,6 @@
 import Foundation
 import ArgumentParser
+import CifraClubChords
 
 struct Sifr : ParsableCommand {
     
@@ -36,14 +37,15 @@ extension Sifr {
         var removeFooterChords : Bool = false
         
         func run() throws {
-            let cifraClubTabs = CifraClubChords(
+
+            let cifraClubTabs = Chords(
                 musicName: musicName,
                 tabs: tabs,
                 twoColumns: split,
                 bodyDiagrams: diagramChords,
                 footerChords: !removeFooterChords
             )
-            
+
             cifraClubTabs.searchMusic()
         }
     }
