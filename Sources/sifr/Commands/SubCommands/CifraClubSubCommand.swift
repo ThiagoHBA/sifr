@@ -22,11 +22,8 @@ extension Sifr {
         @Flag(help: "Show tabs in music website")
         var tabs: Bool = false
         
-        @Flag(help: "Split the website tabs in two columns")
-        var split: Bool = false
-        
-        @Flag(help: "Show diagrams chords in middle of tabs")
-        var diagramChords: Bool = false
+        @Option(name: .shortAndLong, help: "Change the key of music")
+        var key: String?
         
         @Flag(help: "Disable Footer chords in website tabs")
         var removeFooterChords : Bool = false
@@ -36,8 +33,7 @@ extension Sifr {
             let cifraClubChords = Chords(
                 musicName: musicName,
                 tabs: tabs,
-                twoColumns: split,
-                bodyDiagrams: diagramChords,
+                key: key?.lowercased(),
                 footerChords: !removeFooterChords
             )
 
