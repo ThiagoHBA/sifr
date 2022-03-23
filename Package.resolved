@@ -14,8 +14,8 @@
         "package": "CifraClubChords",
         "repositoryURL": "https://github.com/ThiagoHBA/cifra-club-chords-library",
         "state": {
-          "branch": "feat/key-argument",
-          "revision": "513fe17b480126538f97aa0388da3adb9015caf2",
+          "branch": "master",
+          "revision": "66bafa5d841257be1503f9952997bba7ba5c2d13",
           "version": null
         }
       },
