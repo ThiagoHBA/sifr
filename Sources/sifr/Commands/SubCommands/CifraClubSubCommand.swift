@@ -1,22 +1,17 @@
+//
+//  File.swift
+//  
+//
+//  Created by Thiago Henrique on 23/03/22.
+//
+
 import Foundation
 import ArgumentParser
 import CifraClubChords
 
-struct Sifr : ParsableCommand {
-    
-    static let configuration = CommandConfiguration(
-        abstract: "Browse your tabs and edit them easily",
-        usage: "$> sifr <your music>",
-        
-        subcommands: [CifraClub.self],
-        defaultSubcommand: CifraClub.self
-    )
-    
-}
-
 extension Sifr {
     
-    struct CifraClub : ParsableCommand{
+    struct CifraClub : ParsableCommand {
         static let configuration = CommandConfiguration(
             abstract: "Search for tabs in cifra club web site"
         )
@@ -38,7 +33,7 @@ extension Sifr {
         
         func run() throws {
 
-            let cifraClubTabs = Chords(
+            let cifraClubChords = Chords(
                 musicName: musicName,
                 tabs: tabs,
                 twoColumns: split,
@@ -46,7 +41,7 @@ extension Sifr {
                 footerChords: !removeFooterChords
             )
 
-            cifraClubTabs.searchMusic()
+            cifraClubChords.searchMusic()
         }
     }
 }
