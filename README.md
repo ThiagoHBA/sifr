@@ -60,7 +60,7 @@ Utilizando o terminal na pasta em que deseja instalar o programa, use o comando:
 * `git clone git@github.com:ThiagoHBA/sifr.git`
 
 ### Executando
-Após a instalação ser efetuada, ainda no terminal, utilize o comando:
+Após a instalação ser efetuada, ainda no terminal, entre na pasta do projeto e utilize o comando:
 * `swift run sifr "<insira sua música>"`
 
 Para duvidas em como utilizar os parâmetros para alterar os diagramas utilize: 
