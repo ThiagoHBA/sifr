@@ -4,7 +4,7 @@
 
 ## O que é sifr?
 
-**sifr** é um programa que busca facilitar o acesso a diagramas musicais, como, partituras, cifras, tablaturas, além de permitir a edição de parâmetros do diagrama a partir de argumentos enviados ao programa. Por padrão ele possui compatibilidade com o site <a href="https://www.cifraclub.com.br">Cifra Club</a> e aceita argumentos como tom e desativar tablaturas, diagramas no fim da cifra.
+**sifr** é um programa que busca facilitar o acesso a diagramas musicais, como: partituras, cifras, tablaturas. Além de permitir a edição de parâmetros do diagrama a partir de argumentos enviados ao programa. Por padrão ele possui compatibilidade com o site <a href="https://www.cifraclub.com.br">Cifra Club</a> e aceita argumentos como tom e desativar tablaturas, diagramas no fim da cifra.
 
 ## Como contribuir com esse repositório? 
 
@@ -57,7 +57,7 @@ extension Sifr {
 
 ### Instalando
 Utilizando o terminal na pasta em que deseja instalar o programa, use o comando:
-* `git clone https://github.com/ThiagoHBA/sifr`
+* `git clone git@github.com:ThiagoHBA/sifr.git`
 
 ### Executando
 Após a instalação ser efetuada, ainda no terminal, utilize o comando:
@@ -65,4 +65,3 @@ Após a instalação ser efetuada, ainda no terminal, utilize o comando:
 
 Para duvidas em como utilizar os parâmetros para alterar os diagramas utilize: 
 * `swift run sifr --help`
-
